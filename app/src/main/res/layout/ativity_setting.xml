@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+                                                 xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 android:id="@+id/main_content"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:fitsSystemWindows="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/toobar"
+                                       android:layout_width="match_parent" android:padding="0dp"
+                                       android:layout_height="50dp" android:background="?attr/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginRight="15dp">
+            <TextView android:layout_centerInParent="true"
+                      android:layout_width="wrap_content" android:text="我的" android:textSize="20sp" android:textColor="@android:color/white"
+                      android:layout_height="wrap_content" android:gravity="center" android:layout_margin="0dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" android:background="@android:color/white" android:layout_marginTop="10dp">
+
+        <ImageView android:layout_centerVertical="true"
+            android:layout_width="30dp" android:layout_marginLeft="20dp"
+            android:layout_height="30dp" android:src="@drawable/ico_tuisong"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:text="消息推送" android:layout_centerVertical="true"
+            android:layout_height="wrap_content" android:textSize="15sp" android:layout_marginLeft="60dp"/>
+
+        <Switch
+            android:id="@+id/sh_ts"
+            android:layout_width="100dp" android:layout_centerVertical="true"
+            android:layout_height="40dp" android:layout_alignParentRight="true" android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" android:background="@android:color/white" android:layout_marginTop="10dp">
+
+        <ImageView android:layout_centerVertical="true"
+                   android:layout_width="30dp" android:layout_marginLeft="20dp"
+                   android:layout_height="30dp" android:src="@drawable/ico_dy"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:text="开奖订阅" android:layout_centerVertical="true"
+            android:layout_height="wrap_content" android:textSize="15sp" android:layout_marginLeft="60dp"/>
+
+        <Spinner
+            android:id="@+id/sh_jhdy"
+            android:layout_width="wrap_content" android:layout_centerVertical="true"
+            android:layout_height="40dp" android:layout_alignParentRight="true" android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:id="@+id/rl_wifi"
+        android:layout_height="50dp" android:background="@android:color/white" android:layout_marginTop="10dp">
+
+        <ImageView android:layout_centerVertical="true"
+                   android:layout_width="30dp" android:layout_marginLeft="20dp"
+                   android:layout_height="30dp" android:src="@drawable/ico_wifis"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:text="局域网分享" android:layout_centerVertical="true"
+            android:layout_height="wrap_content" android:textSize="15sp" android:layout_marginLeft="60dp"/>
+
+        <ImageView
+            android:id="@+id/sh_jjj" android:src="@drawable/ico_rjt"
+            android:layout_width="20dp" android:layout_centerVertical="true"
+            android:layout_height="20dp" android:layout_alignParentRight="true" android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

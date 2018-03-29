@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lfish.lotterysscjh.MainGroup"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<com.flyco.tablayout.SegmentTabLayout-->
+
+        <!--android:id="@+id/tabs"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="36dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:paddingLeft="30dp"-->
+        <!--android:paddingRight="30dp"-->
+        <!--tl:tl_indicator_anim_enable="true"-->
+        <!--tl:tl_indicator_bounce_enable="false"-->
+        <!--tl:tl_indicator_margin_bottom="2dp"-->
+        <!--tl:tl_indicator_margin_left="2dp"-->
+        <!--tl:tl_indicator_margin_right="2dp"-->
+        <!--tl:tl_indicator_margin_top="2dp"-->
+        <!--tl:tl_tab_space_equal="true"/>-->
+
+    <!--<com.flyco.tablayout.SlidingTabLayout-->
+        <!--android:id="@+id/tabs"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:background="#3F9FE0"-->
+        <!--tl:tl_textAllCaps="true"-->
+        <!--tl:tl_textsize="14sp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            tl:tl_tab_space_equal ="true" android:padding="0dp" android:layout_marginBottom="55dp"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        tl:tl_iconGravity="TOP"
+        tl:tl_iconHeight="20dp"
+        tl:tl_iconMargin="5dp"
+        tl:tl_iconWidth="20dp"
+        tl:tl_indicator_bounce_enable="false"
+        tl:tl_indicator_color="#ff6c6c"
+        tl:tl_indicator_gravity="BOTTOM"
+        tl:tl_textSelectColor="#ff6c6c"
+        tl:tl_textUnselectColor="#ff6c6c"
+        tl:tl_textsize="15sp"
+        tl:tl_underline_color="#ff6c6c"
+        tl:tl_underline_gravity="TOP"
+        tl:tl_underline_height="1dp"/>
+
+</RelativeLayout>

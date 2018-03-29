@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.lfish.lotterysscjh.HistoryActivity">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/toobar"
+                                       android:layout_width="match_parent" android:padding="0dp"
+                                       android:layout_height="50dp" android:background="?attr/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginRight="15dp">
+            <TextView android:layout_centerVertical="true" android:layout_marginLeft="20dp"
+                      android:layout_width="wrap_content" android:text="开奖计划" android:textSize="20sp" android:textColor="@android:color/white"
+                      android:layout_height="wrap_content" android:gravity="center" android:layout_margin="0dp"/>
+
+            <LinearLayout android:layout_centerVertical="true"
+                android:layout_width="match_parent" android:gravity="center" android:layout_marginLeft="100dp"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinner1" android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <Spinner
+                    android:id="@+id/spinner2" android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp" android:visibility="gone" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent" android:gravity="center" android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="--下期计划概率号码--"/>
+
+        <com.lfish.lotterysscjh.view.AutoNewLineLayout
+            android:id="@+id/anl_plan_numbers" android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp" app:horizontalSpace="3dp" app:vertivalSpace="3dp">
+
+        </com.lfish.lotterysscjh.view.AutoNewLineLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ls_planes"
+        android:layout_width="match_parent" android:layout_marginTop="10dp"
+        android:layout_height="match_parent"></ListView>
+
+
+</LinearLayout>

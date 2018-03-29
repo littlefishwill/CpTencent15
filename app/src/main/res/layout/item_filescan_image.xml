@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:gravity="center_vertical"
+        android:layout_height="50dip" android:orientation="horizontal" android:layout_marginLeft="10dip">
+
+        <com.bm.library.PhotoView
+            android:id="@+id/iv_filescan_ico"
+            android:layout_width="50dip"
+            android:layout_height="50dip" android:src="@mipmap/logo8" />
+
+        <TextView android:layout_marginLeft="10dip"
+            android:id="@+id/tv_filescan_name"
+            android:layout_width="wrap_content" android:text="122.txt"
+            android:layout_height="wrap_content"  android:textSize="12sp" android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>

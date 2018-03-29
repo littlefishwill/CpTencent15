@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"  android:layout_marginRight="10dip"
+        android:layout_height="50dip" android:orientation="horizontal"  android:gravity="center">
+
+    <Button
+        android:id="@+id/bt_filescan_tilte_des" android:background="@drawable/shape_filescan_bg"
+        android:layout_width="wrap_content" android:gravity="center" android:text="1232"
+        android:layout_height="match_parent"  android:textColor="@android:color/black" />
+
+    <TextView android:layout_marginLeft="10px"
+        android:layout_width="wrap_content" android:textSize="20sp"
+        android:layout_height="wrap_content" android:textColor="@android:color/black" android:text=">" />
+    </LinearLayout>
+
+</LinearLayout>

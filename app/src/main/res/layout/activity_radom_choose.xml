@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lfish.lotterysscjh.RadomChooseActivity" android:gravity="center_horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content" android:gravity="center" android:textSize="10sp" android:layout_marginTop="10dp" android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content" android:text="---请您认真填写下方信息---\r\n---我们会为您甄选出您的幸运数字---"/>
+
+
+    <LinearLayout
+        android:layout_width="300dp" android:layout_marginTop="20dp" android:gravity="center"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content" android:textSize="20sp"
+            android:layout_height="wrap_content" android:text="姓名:"/>
+
+    <EditText android:layout_marginLeft="10dp"
+         android:id="@+id/et_name" android:hint="请您在这里填写您的姓名"
+        android:layout_width="200sp" android:paddingLeft="20dp" android:paddingRight="20dp"
+        android:layout_height="50sp" android:background="@drawable/corner_shape_dilog"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp" android:layout_marginTop="20dp" android:gravity="center"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content" android:textSize="20sp"
+            android:layout_height="wrap_content" android:text="年龄:"/>
+
+        <EditText android:layout_marginLeft="10dp"
+                  android:id="@+id/et_age"  android:hint="请您在这里填写您的年龄"
+                  android:layout_width="200sp" android:paddingLeft="20dp" android:paddingRight="20dp"
+                  android:layout_height="50sp" android:background="@drawable/corner_shape_dilog"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp" android:layout_marginTop="20dp" android:gravity="center"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content" android:textSize="20sp"
+            android:layout_height="wrap_content" android:text="性别:"/>
+
+        <EditText android:layout_marginLeft="10dp"
+                  android:id="@+id/et_gender"   android:hint="请您在这里填写您的性别"
+                  android:layout_width="200sp" android:paddingLeft="20dp" android:paddingRight="20dp"
+                  android:layout_height="50sp" android:background="@drawable/corner_shape_dilog"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp" android:layout_marginTop="20dp" android:gravity="center"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.CubeGrid"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center" android:layout_marginLeft="15dp"
+            app:SpinKit_Color="@android:color/white" />
+
+        <Button
+            android:id="@+id/submit"
+                    android:layout_marginLeft="12dp" android:text="查找我的幸运数"
+                  android:layout_width="200sp" android:paddingLeft="20dp" android:paddingRight="20dp"
+                  android:layout_height="50sp" android:background="@drawable/corner_shape"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

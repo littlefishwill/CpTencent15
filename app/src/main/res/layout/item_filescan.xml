@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent" android:gravity="center_vertical"
+        android:layout_height="50dip" android:orientation="horizontal" android:layout_marginLeft="10dip">
+
+        <ImageView
+            android:id="@+id/iv_filescan_ico"
+            android:layout_width="40dip"
+            android:layout_height="40dip" android:src="@mipmap/logo8" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView android:layout_marginLeft="10dip"
+            android:id="@+id/tv_filescan_name" android:maxLines="2" android:layout_marginRight="60dip"
+            android:layout_width="match_parent" android:text="122.txt" android:layout_marginTop="10dip"
+            android:layout_height="wrap_content"  android:textSize="12sp" android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/iv_filescan_download"
+                android:padding="15dip"
+                android:layout_width="50dip" android:src="@drawable/file_scan_ico_more" android:layout_marginRight="10dip"
+                android:layout_height="50dip" android:layout_centerVertical="true" android:layout_alignParentRight="true" />
+
+            <View
+                android:layout_width="match_parent" android:layout_alignParentBottom="true" android:layout_marginRight="10dip"
+                android:layout_height="1px" android:background="#99BBDD"></View>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

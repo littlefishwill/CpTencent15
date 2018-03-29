@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/corner_shape_dilog"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="恭喜您!"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content" android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" android:textColor="@android:color/white"
+                android:text="幸运数字:" />
+
+            <TextView
+                android:id="@+id/qs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:layout_marginLeft="10dp" android:textColor="@android:color/white"
+                android:text="吉星高照，好运连连" />
+
+        </LinearLayout>
+
+        <LinearLayout android:visibility="gone"
+            android:layout_width="wrap_content" android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"  android:textColor="@android:color/white"
+                android:text="幸运数字:" />
+
+            <TextView
+                android:id="@+id/kjsj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"  android:textColor="@android:color/white"
+                android:text="12212" />
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px" android:background="@android:color/white" android:layout_marginTop="20dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="关闭" android:clickable="true" android:enabled="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

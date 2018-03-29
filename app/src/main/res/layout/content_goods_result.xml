@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_height="match_parent" android:gravity="center_horizontal">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toobar"
+                                           android:layout_width="match_parent" android:padding="0dp"
+                                           android:layout_height="50dp" android:background="?attr/colorPrimary">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginRight="15dp">
+            <TextView android:layout_centerInParent="true"
+                android:layout_width="wrap_content" android:text="最新开奖" android:textSize="20sp" android:textColor="@android:color/white"
+                android:layout_height="wrap_content" android:gravity="center" android:layout_margin="0dp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/convenientBanner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:canLoop="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_marginBottom="10dp" android:layout_marginTop="10dp"
+            android:layout_height="wrap_content" android:text="----以下是最新的开奖信息，请您观阅----" android:textSize="10sp"/>
+
+
+        <LinearLayout android:visibility="gone"
+            android:layout_width="match_parent" android:orientation="vertical" android:background="@drawable/zhanshilan"
+            android:layout_height="match_parent" android:layout_weight="3" android:layout_margin="10dp" android:gravity="center">
+
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content" android:textColor="@android:color/holo_red_dark"
+                android:layout_height="wrap_content" android:textSize="30sp" android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_except"
+                android:layout_width="wrap_content" android:textColor="@android:color/holo_red_dark"
+                android:layout_height="wrap_content" android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content" android:textColor="@android:color/holo_red_dark"
+                android:layout_height="wrap_content" android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_number" android:layout_marginTop="10dp" android:textStyle="bold"
+                android:layout_width="wrap_content" android:textColor="@android:color/holo_red_dark"
+                android:layout_height="wrap_content" android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content" android:textColor="@android:color/holo_red_dark"
+                android:layout_height="wrap_content" android:textSize="10sp" android:text="(开奖号码)"/>
+
+        </LinearLayout>
+
+    <ListView
+        android:id="@+id/ls_list" android:horizontalSpacing="8dp" android:verticalSpacing="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
