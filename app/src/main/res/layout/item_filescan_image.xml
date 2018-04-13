@@ -10,7 +10,7 @@
         <com.bm.library.PhotoView
             android:id="@+id/iv_filescan_ico"
             android:layout_width="50dip"
-            android:layout_height="50dip" android:src="@mipmap/logo8" />
+            android:layout_height="50dip" android:src="@mipmap/logo2" />
 
         <TextView android:layout_marginLeft="10dip"
             android:id="@+id/tv_filescan_name"

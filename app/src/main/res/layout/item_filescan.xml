@@ -10,7 +10,7 @@
         <ImageView
             android:id="@+id/iv_filescan_ico"
             android:layout_width="40dip"
-            android:layout_height="40dip" android:src="@mipmap/logo8" />
+            android:layout_height="40dip" android:src="@mipmap/logo2" />
 
         <RelativeLayout
             android:layout_width="match_parent"

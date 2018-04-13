@@ -58,13 +58,13 @@
                 <!--android:id="@+id/gv_numbers"-->
                 <!--android:layout_width="match_parent"-->
                 <!--android:layout_height="wrap_content" android:numColumns="10"></GridView>-->
-            <com.lfish.lotterysscjh.view.AutoNewLineLayout
+            <com.lfish.lotteryssc.view.AutoNewLineLayout
                 android:id="@+id/anl_numbers" android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="4dp" app:horizontalSpace="3dp" app:vertivalSpace="3dp">
 
-            </com.lfish.lotterysscjh.view.AutoNewLineLayout>
+            </com.lfish.lotteryssc.view.AutoNewLineLayout>
 
         </LinearLayout>
 

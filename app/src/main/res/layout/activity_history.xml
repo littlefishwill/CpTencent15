@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal"
-    tools:context="com.lfish.lotterysscjh.HistoryActivity">
+    tools:context="com.lfish.lotteryssc.HistoryActivity">
 
     <TextView
         android:layout_width="wrap_content" android:gravity="center" android:textSize="10sp" android:layout_marginTop="10dp" android:layout_marginBottom="5dp"

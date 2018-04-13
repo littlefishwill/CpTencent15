@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.lfish.lotterysscjh">
+          package="com.lfish.lotteryssc">
 
     <!-- Required -->
     <permission
-        android:name="com.lfish.lotterysscjh.permission.JPUSH_MESSAGE"
+        android:name="com.lfish.lotteryssc.permission.JPUSH_MESSAGE"
         android:protectionLevel="signature"/>
-
     <!-- Required -->
 
-    <uses-permission android:name="com.lfish.lotterysscjh.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="com.lfish.lotteryssc.permission.JPUSH_MESSAGE"/>
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
@@ -34,15 +33,16 @@
     <uses-permission android:name="android.permission.GET_TASKS"/>
 
     <application
-        android:name="com.lfish.lotterysscjh.CPAppliacition"
+        android:name=".CPAppliacition"
         android:allowBackup="true"
-        android:icon="@mipmap/logo8"
+        android:icon="@mipmap/logo2"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.lfish.lotterysscjh.MainActivity"
-            android:screenOrientation="portrait" android:theme="@style/AppThemeNoAction">
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -50,65 +50,74 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.lfish.lotterysscjh.GoodsResultActivity"
+            android:name=".GoodsResultActivity"
             android:label="@string/title_activity_goods_result"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoAction">
         </activity>
         <activity
-            android:name="com.lfish.lotterysscjh.wififound.WifiMainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" android:label="局域网共享">
-        </activity>
-
-        <activity
-            android:name="com.lfish.lotterysscjh.LineChartActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme">
-        </activity>
-
-        <activity
-            android:name="com.lfish.lotterysscjh.PieChartActivity"
+            android:name=".wififound.WifiMainActivity"
+            android:label="局域网共享"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
         </activity>
         <activity
-            android:name="com.lfish.lotterysscjh.MainGroup"
+            android:name=".LineChartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".PieChartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity android:name=".NewsActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".MainGroup"
             android:label="@string/title_activity_goods_result"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoAction">
         </activity>
         <activity
-            android:name="com.lfish.lotterysscjh.WebActivity"
+            android:name=".UpdateActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoAction">
         </activity>
-
         <activity
-            android:name="com.lfish.lotterysscjh.SettingActivity"
+            android:name=".ReadyUpdateActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoAction">
         </activity>
-
-        <activity android:name="com.lfish.lotterysscjh.wififound.filescan.FileScanActivity" android:screenOrientation="portrait"
-                  android:theme="@style/AppTheme"></activity>
-
-        <activity android:name="com.lfish.lotterysscjh.wififound.filescan.filescandes.FileScanImage"
-                  android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
-
-
-        <activity android:name="com.lfish.lotterysscjh.PlaneNumberActivity"
-                  android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction">
+        </activity>
+        <activity
+            android:name=".wififound.filescan.FileScanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".wififound.filescan.filescandes.FileScanImage"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".PlaneNumberActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name=".wififound.filescan.filescandes.FileScanVideo"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <!-- or android:screenOrientation="landscape" -->
 
         <activity
-            android:name="com.lfish.lotterysscjh.wififound.filescan.filescandes.FileScanVideo"
+            android:name=".wififound.filescan.filescandes.FileScanMusic"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" /> <!-- or android:screenOrientation="landscape"-->
-
-        <activity
-            android:name="com.lfish.lotterysscjh.wififound.filescan.filescandes.FileScanMusic"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait" /> <!-- or android:screenOrientation="landscape"-->
+            android:screenOrientation="portrait"/>
+        <!-- or android:screenOrientation="landscape" -->
 
         <service
             android:name="cn.jpush.android.service.PushService"
@@ -124,7 +133,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.lfish.lotterysscjh.installapkdemo"
+            android:authorities="com.lfish.lotteryssc.installapkdemo"
             android:exported="false"
             android:grantUriPermissions="true">
 
@@ -137,7 +146,7 @@
         <!-- since 3.0.9 Required SDK 核心功能 -->
         <provider
             android:name="cn.jpush.android.service.DataProvider"
-            android:authorities="com.lfish.lotterysscjh.DataProvider"
+            android:authorities="com.lfish.lotteryssc.DataProvider"
             android:exported="true"/>
 
         <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
@@ -148,14 +157,15 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.DaemonService"/>
-                <category android:name="com.lfish.lotterysscjh"/>
+
+                <category android:name="com.lfish.lotteryssc"/>
             </intent-filter>
         </service>
 
         <!-- since 3.1.0 Required SDK 核心功能 -->
         <provider
             android:name="cn.jpush.android.service.DownloadProvider"
-            android:authorities="com.lfish.lotterysscjh.DownloadProvider"
+            android:authorities="com.lfish.lotteryssc.DownloadProvider"
             android:exported="true"/>
 
         <!-- Required SDK核心功能 -->
@@ -165,7 +175,7 @@
             <intent-filter android:priority="1000">
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
 
-                <category android:name="com.lfish.lotterysscjh"/>
+                <category android:name="com.lfish.lotteryssc"/>
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.USER_PRESENT"/>
@@ -190,7 +200,7 @@
                 <action android:name="cn.jpush.android.ui.PushActivity"/>
 
                 <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="com.lfish.lotterysscjh"/>
+                <category android:name="com.lfish.lotteryssc"/>
             </intent-filter>
         </activity>
         <!-- SDK核心功能 -->
@@ -201,7 +211,7 @@
             android:theme="@style/MyDialogStyle">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="com.lfish.lotterysscjh"/>
+                <category android:name="com.lfish.lotteryssc"/>
             </intent-filter>
         </activity>
 
@@ -259,12 +269,16 @@
         <!-- Required. AppKey copied from Portal -->
         <meta-data
             android:name="JPUSH_APPKEY"
-            android:value="aee654707f9329cee576f49d"/>
+            android:value="6a1e7eb7c8d93d1b0fd8c1b1"/>
 
-        <activity android:name="com.lfish.lotterysscjh.RadomChooseActivity">
+        <activity android:name=".RadomChooseActivity">
         </activity>
-        <activity android:name="com.lfish.lotterysscjh.HistoryActivity" android:theme="@style/AppTheme" android:label="@string/app_history">
+        <activity
+            android:name=".HistoryActivity"
+            android:label="@string/app_history"
+            android:theme="@style/AppTheme">
         </activity>
+
     </application>
 
 </manifest>
